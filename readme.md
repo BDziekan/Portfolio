@@ -143,8 +143,6 @@ Update the GitHub profile link in the Contact section once my profile is set up.
 
 
 
-Potentially switch to SSH authentication for Git operations for better security.
-
 Contact
 
 Feel free to reach out via the contact form on the website or connect with me on LinkedIn.
