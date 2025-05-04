@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav__bar">
+      <a href="#"><span class="logo nav__logo">B</span>art Dziekan</a>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><button class="btn btn__large"><a href="#contact">Contact</a></button></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <div class="section__container header__container">
+      <div class="header__content">
+        <h1>Data Analyst</h1>
+        <p class="section__description">
+          Transforming raw data into actionable insights with Python, SQL, and Tableau.
+        </p>
+        <button class="btn"><a href="#portfolio">View Projects</a></button>
+      </div>
+      <div class="header__image">
+        <img src="assets/Home_Profile.jpg" alt="header" class="header__img-1" />
+        <img src="assets/background.svg" alt="header" class="header__img-2" />
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="section__container about__container">
+      <div class="about__image">
+        <img src="assets/dashboard.svg" alt="about" class="about__img" />
+        
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">About Me</h2>
+        <p class="section__description">
+          Passionate about uncovering insights through data analysis. Experienced in building dashboards, querying databases, and modeling trends.
+        </p>
+        <button class="btn"><a href="assets/CV_Bartek2.pdf" target="_blank">Download Resume</a></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section__container service__container">
+      <h2 class="section__header">Skills</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="fa-solid fa-chart-line"></i></span>
+          <h4>Data Visualization</h4>
+          <p>Creating impactful visualizations with Tableau and Excel Dashboards.</p>
+        </div>
+        <div class="service__card">
+          <span><i class="fa-solid fa-database"></i></span>
+          <h4>Database Management</h4>
+          <p>Proficient in SQL for querying, managing, and optimizing databases.</p>
+        </div>
+        <div class="service__card">
+          <span><i class="fa-solid fa-code"></i></span>
+          <h4>Data Analysis with Python</h4>
+          <p>Learning how to use Python for data cleaning and analysis.</p>
+        </div>
+      </div>
+      <div class="portfolio__banner">
+        <h2>10+</h2>
+        <h3>Completed Projects</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="section__container portfolio__container">
+      <h2 class="section__header">Portfolio</h2>
+      <div class="portfolio__grid">
+        <div class="portfolio__card" data-modal="modal-1">
+          <img src="assets/portfolio-1.jpg" alt="Sales Trends Dashboard" />
+          <h4>Sales Trends Dashboard</h4>
+        </div>
+        <div class="portfolio__card" data-modal="modal-2">
+          <img src="assets/portfolio-2.jpg" alt="Website Traffic Analysis" />
+          <h4>Website Traffic Analysis</h4>
+        </div>
+        <div class="portfolio__card" data-modal="modal-3">
+          <img src="assets/portfolio-3.jpg" alt="Customer Database Insights" />
+          <h4>Customer Database Insights</h4>
+        </div>
+        <div class="portfolio__card" data-modal="modal-4">
+          <img src="assets/portfolio-4.jpg" alt="Predictive Sales Forecasting" />
+          <h4>Predictive Sales Forecasting</h4>
+        </div>
+        <div class="portfolio__card" data-modal="modal-5">
+          <img src="assets/portfolio-5.jpg" alt="Customer Segmentation Analysis" />
+          <h4>Customer Segmentation Analysis</h4>
+        </div>
+        <div class="portfolio__card" data-modal="modal-6">
+          <img src="assets/portfolio-6.jpg" alt="Inventory Optimization Report" />
+          <h4>Inventory Optimization Report</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals for each project -->
+    <div class="modal" id="modal-1">
+      <div class="modal__content">
+        <span class="modal__close">×</span>
+        <h2>Sales Trends Dashboard</h2>
+        <img src="assets/portfolio-1.jpg" alt="Sales Trends Dashboard" />
+        <p><strong>Description:</strong> A Tableau dashboard visualizing sales trends over time, designed to help businesses identify growth opportunities and seasonal patterns.</p>
+        <p><strong>Technologies:</strong> Tableau, SQL</p>
+        <p><strong>Analysis Process:</strong> Extracted sales data from a PostgreSQL database using SQL queries, cleaned the data to handle missing values, and built a Tableau dashboard with time-series visualizations (line charts, heatmaps).</p>
+        <p><strong>Findings:</strong> Identified a 15% sales increase during Q4, with electronics being the top-performing category. Seasonal dips were noted in Q1, suggesting a need for targeted promotions.</p>
+        <p><strong>Impact:</strong> Enabled the marketing team to allocate budgets more effectively, resulting in a 10% increase in Q1 sales the following year.</p>
+        <p><a href="#" target="_blank">View Live Demo</a> | <a href="#" target="_blank">GitHub Repo</a></p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-2">
+      <div class="modal__content">
+        <span class="modal__close">×</span>
+        <h2>Website Traffic Analysis</h2>
+        <img src="assets/portfolio-2.jpg" alt="Website Traffic Analysis" />
+        <p><strong>Description:</strong> A Python-based analysis of website traffic to understand user behavior and improve site performance.</p>
+        <p><strong>Technologies:</strong> Python (Pandas, Matplotlib), Google Analytics API</p>
+        <p><strong>Analysis Process:</strong> Pulled data from Google Analytics API, cleaned it using Pandas (removing duplicates, handling nulls), and visualized traffic patterns using Matplotlib (bar charts, line graphs).</p>
+        <p><strong>Findings:</strong> Peak traffic occurred on weekdays between 2-4 PM, with 60% of users coming from organic search. Bounce rates were high (45%) on mobile devices.</p>
+        <p><strong>Impact:</strong> Recommended mobile UX improvements, reducing bounce rates by 20% within 3 months.</p>
+        <p><a href="#" target="_blank">View Report (PDF)</a> | <a href="#" target="_blank">GitHub Repo</a></p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-3">
+      <div class="modal__content">
+        <span class="modal__close">×</span>
+        <h2>Customer Database Insights</h2>
+        <img src="assets/portfolio-3.jpg" alt="Customer Database Insights" />
+        <p><strong>Description:</strong> A SQL-driven analysis of a customer database to uncover purchasing patterns and customer demographics.</p>
+        <p><strong>Technologies:</strong> SQL, MySQL Workbench</p>
+        <p><strong>Analysis Process:</strong> Queried a MySQL database with over 100,000 customer records, used joins to combine purchase and demographic data, and aggregated results to identify trends.</p>
+        <p><strong>Findings:</strong> 70% of high-value customers were aged 25-34, with a preference for online purchases. Repeat purchase rates were highest among this W demographic.</p>
+        <p><strong>Impact:</strong> Informed a targeted email campaign for the 25-34 age group, increasing repeat purchases by 12%.</p>
+        <p><a href="#" target="_blank">View SQL Queries (GitHub)</a></p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-4">
+      <div class="modal__content">
+        <span class="modal__close">×</span>
+        <h2>Predictive Sales Forecasting</h2>
+        <img src="assets/portfolio-4.jpg" alt="Predictive Sales Forecasting" />
+        <p><strong>Description:</strong> A machine learning model to forecast sales for the next quarter using historical data.</p>
+        <p><strong>Technologies:</strong> Python (Scikit-learn, Pandas), Jupyter Notebook</p>
+        <p><strong>Analysis Process:</strong> Collected 3 years of sales data, performed feature engineering (e.g., adding seasonal variables), and trained a linear regression model using Scikit-learn. Evaluated model performance with RMSE.</p>
+        <p><strong>Findings:</strong> Forecasted a 5% sales increase for the next quarter, with high accuracy (RMSE of 0.03). Identified key drivers as promotional campaigns and holiday seasons.</p>
+        <p><strong>Impact:</strong> Helped the sales team plan inventory and staffing, reducing overstock by 8%.</p>
+        <p><a href="#" target="_blank">View Notebook (GitHub)</a></p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-5">
+      <div class="modal__content">
+        <span class="modal__close">×</span>
+        <h2>Customer Segmentation Analysis</h2>
+        <img src="assets/portfolio-5.jpg" alt="Customer Segmentation Analysis" />
+        <p><strong>Description:</strong> A clustering analysis to segment customers based on purchasing behavior for targeted marketing.</p>
+        <p><strong>Technologies:</strong> Python (Pandas, Scikit-learn), Tableau</p>
+        <p><strong>Analysis Process:</strong> Used Pandas to preprocess customer data (RFM analysis: Recency, Frequency, Monetary value), applied K-means clustering with Scikit-learn, and visualized segments in Tableau.</p>
+        <p><strong>Findings:</strong> Identified 4 distinct customer segments: High-Value Loyal, Occasional Spenders, New Customers, and At-Risk. High-Value Loyal customers contributed 40% of revenue.</p>
+        <p><strong>Impact:</strong> Developed tailored marketing strategies for each segment, increasing overall revenue by 15%.</p>
+        <p><a href="#" target="_blank">View Dashboard</a> | <a href="#" target="_blank">GitHub Repo</a></p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-6">
+      <div class="modal__content">
+        <span class="modal__close">×</span>
+        <h2>Inventory Optimization Report</h2>
+        <img src="assets/portfolio-6.jpg" alt="Inventory Optimization Report" />
+        <p><strong>Test Description:</strong> An analysis to optimize inventory levels by identifying slow-moving and fast-moving products.</p>
+        <p><strong>Technologies:</strong> Excel, Power BI</p>
+        <p><strong>Analysis Process:</strong> Imported inventory data into Excel, calculated turnover rates and stock levels, and created a Power BI report with interactive charts to highlight trends.</p>
+        <p><strong>Findings:</strong> 20% of products accounted for 80% of sales (Pareto principle). Slow-moving items were tying up 30% of inventory capital.</p>
+        <p><strong>Impact:</strong> Recommended reducing stock of slow-moving items, freeing up $50,000 in capital for reinvestment.</p>
+        <p><a href="#" target="_blank">View Report (PDF)</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section__container contact__container">
+      <h2 class="section__header">Get in Touch</h2>
+      <div class="contact__content">
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+      <div class="contact__socials">
+        <a href="https://linkedin.com/in/bartekdziekan"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/BDziekan"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Bartlomiej Dziekan. All Rights Reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
