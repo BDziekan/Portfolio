@@ -338,72 +338,68 @@ nav {
 
 /* Modal Styles */
 .modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 10;
-  align-items: center;
-  justify-content: center;
-  overflow-y: auto;
-}
-
-.modal__content {
-  background-color: var(--dark-bg);
-  padding: 2rem;
-  border-radius: 1rem;
-  max-width: 600px;
-  width: 90%;
-  position: relative;
-  color: var(--extra-light);
-  margin: 2rem 0;
-}
-
-.modal__content img {
-  max-width: 100%;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-}
-
-.modal__content h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--extra-light);
-}
-
-.modal__content p {
-  color: var(--white);
-  line-height: 1.75rem;
-  margin-bottom: 1rem;
-}
-
-.modal__content a {
-  color: var(--primary-color);
-  margin-right: 1rem;
-  transition: color 0.3s;
-}
-
-.modal__content a:hover {
-  color: var(--secondary-color);
-}
-
-.modal__close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
-  color: var(--white);
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.modal__close:hover {
-  color: var(--primary-color);
-}
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for better contrast */
+    z-index: 2000; /* Higher z-index to ensure it’s on top */
+    overflow: auto; /* Allow scrolling if modal content overflows */
+  }
+  
+  .modal__content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1A1A1A; /* Match site’s dark theme */
+    color: #fff; /* White text for readability */
+    padding: 2.5rem;
+    width: 90%;
+    max-width: 600px; /* Limit width for readability */
+    max-height: 90vh; /* Ensure it fits within viewport height */
+    overflow-y: auto; /* Scroll if content is too tall */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  }
+  
+  .modal__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .modal__close:hover {
+    color: #FF5E7D; /* Pink color on hover to match theme */
+  }
+  
+  .modal__content h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .modal__content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .modal__content a {
+    color: #7A4BCB; /* Purple link color to match theme */
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .modal__content a:hover {
+    color: #FF5E7D; /* Pink on hover */
+  }
 
 .contact__container {
   min-height: 40vh;

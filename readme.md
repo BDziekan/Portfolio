@@ -1,148 +1,115 @@
-Bart Dziekan's Data Analyst Portfolio
+Bartek Dziekan's Data Analyst Portfolio
 
-Overview
+---Overview
 
 This repository contains my personal portfolio website as a Data Analyst. The site showcases my skills, experience, and projects (to be added) in data analysis using tools like Python, SQL, and Tableau. It includes sections for Home, About, Skills, Portfolio (placeholders for future projects), and Contact.
 
 The website is deployed on GitHub Pages and can be accessed at https://BDziekan.github.io/Portfolio/.
 
-Features
 
+---Features
 
+    Responsive Design: Works on both mobile and desktop devices.
 
 
+        Sections:
 
-Responsive Design: Works on both mobile and desktop devices.
 
+        Home: Introduction with a profile image.
 
 
-Sections:
 
+        About: Details about my experience with a downloadable resume.
 
 
 
+        Skills: Highlights my expertise in data visualization, database management, and Python.
 
-Home: Introduction with a profile image.
 
 
+        Portfolio: Placeholder for future projects with modals for detailed descriptions.
 
-About: Details about my experience with a downloadable resume.
 
 
+        Contact: A functional form to get in touch, powered by Formspree.
 
-Skills: Highlights my expertise in data visualization, database management, and Python.
 
 
+        Assets: Includes images (Home_Profile.jpg, background.svg, dashboard.svg) and a resume PDF (CV_Bartek2.pdf).
 
-Portfolio: Placeholder for future projects with modals for detailed descriptions.
 
+---Setup Instructions
 
+    To run this project locally:
 
-Contact: A functional form to get in touch, powered by Formspree.
+        Clone the Repository:
 
+            git clone https://github.com/BDziekan/Portfolio.git
+            cd Portfolio
 
 
-Assets: Includes images (Home_Profile.jpg, background.svg, dashboard.svg) and a resume PDF (CV_Bartek2.pdf).
+        Install a Local Server (optional, for testing):
 
-Setup Instructions
 
-To run this project locally:
+        Install Node.js if not already installed: nodejs.org.
 
 
+        Install http-server:
 
+            npm install -g http-server
 
 
-Clone the Repository:
+        Run the server:
 
-git clone https://github.com/BDziekan/Portfolio.git
-cd Portfolio
+            http-server
 
 
 
-Install a Local Server (optional, for testing):
+        Open http://localhost:8080 in your browser.
 
 
+---File Structure
 
 
+    index.html: Main HTML file with the website structure.
 
-Install Node.js if not already installed: nodejs.org.
 
 
+    styles.css: CSS styles for the website.
 
-Install http-server:
 
-npm install -g http-server
 
+    main.js: JavaScript for navbar toggle and modal functionality.
 
 
-Run the server:
 
-http-server
+    assets/: Folder containing images (Home_Profile.jpg, background.svg, dashboard.svg) and the resume (CV_Bartek2.pdf).
 
+    Dependencies
 
 
-Open http://localhost:8080 in your browser.
 
+    Font Awesome: For icons (https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css).
 
 
-Alternatively, Open Directly:
 
+    Google Fonts: Montserrat font (https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap).
 
 
 
+    Formspree: For the contact form (https://formspree.io).
 
-Open index.html in a browser (e.g., drag and drop into Chrome).
 
-File Structure
+---Future Updates
 
 
+    Add project assets and details to the Portfolio section as I complete data analysis projects.
 
 
 
-index.html: Main HTML file with the website structure.
+    Update the GitHub profile link in the Contact section once my profile is set up.
 
 
+---Contact
 
-styles.css: CSS styles for the website.
-
-
-
-main.js: JavaScript for navbar toggle and modal functionality.
-
-
-
-assets/: Folder containing images (Home_Profile.jpg, background.svg, dashboard.svg) and the resume (CV_Bartek2.pdf).
-
-Dependencies
-
-
-
-
-
-Font Awesome: For icons (https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css).
-
-
-
-Google Fonts: Montserrat font (https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap).
-
-
-
-Formspree: For the contact form (https://formspree.io).
-
-Future Updates
-
-
-
-
-
-Add project assets and details to the Portfolio section as I complete data analysis projects.
-
-
-
-Update the GitHub profile link in the Contact section once my profile is set up.
-
-
-
-Contact
-
-Feel free to reach out via the contact form on the website or connect with me on LinkedIn.
+    Feel free to reach out via the contact form on the website or connect with me on LinkedIn.
