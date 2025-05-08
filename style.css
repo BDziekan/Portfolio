@@ -397,6 +397,7 @@ nav {
 .modal__content h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  color: var(--extra-light);
 }
 
 .modal__content img {
@@ -409,21 +410,46 @@ nav {
 .modal__content p {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--white);
 }
 
 .modal__content strong {
   color: var(--primary-color); /* Pink for emphasis */
 }
 
-.modal__content a {
-  color: #7A4BCB;
-  text-decoration: none;
-  font-weight: 600;
+.modal__content ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  color: var(--white);
 }
 
-.modal__content a:hover {
+.modal__content ul li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.modal__links {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.modal__links a {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.modal__links a:hover {
   color: #FF5E7D;
+}
+
+.modal__links span {
+  color: var(--white);
 }
 
 .contact__container {
